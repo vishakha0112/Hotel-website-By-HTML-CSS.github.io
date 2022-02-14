@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>THE SERENITY HOTEL</h2>
+    <section class="book">
+    <h1 class="main">BOOK A ROOM</h1>
+    </section>
+    <section class="section">
+            <div class="box">
+                <img src="images/bedroom-g4f57b37a4_1920.jpg" alt="" style="height: 250px; display: block; margin: auto; ">
+                <h1 style="font-size: 30px; margin:0;">Deluxe Rooms</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id veritatis, nostrum suscipit vero deserunt corrupti esse voluptates porro quam dolores quas, ea voluptatum excepturi totam quisquam assumenda aliquid nulla.</p>
+                <h1 style="color:black">Rs.1500 per day</h1>
+            </div>
+        <div class="box">
+            <img src="images/inner-space-g5fa3446b9_1920.jpg" alt="" style="height: 280px; display: block; margin: auto; ">
+            <h1 style="font-size: 30px; margin:0;">Executive Club</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id veritatis, nostrum suscipit vero deserunt corrupti esse voluptates porro quam dolores quas, ea voluptatum excepturi totam quisquam assumenda aliquid nulla.</p>
+            <h1 style="color:black;">Rs.1800 per day</h1>
+        </div>
+        <div class="box">
+            <img src="images/window-g8f150e297_1920.jpg" alt="" style="height: 250px; display: block; margin: auto; ">
+            <h1 style="font-size: 30px; margin:0;">Executive Suite</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id veritatis, nostrum suscipit vero deserunt corrupti esse voluptates porro quam dolores quas, ea voluptatum excepturi totam quisquam assumenda aliquid nulla.</p>
+            <h1 style="color:black;">Rs.2500 per day</h1>
+        </div>
+    </section>
+    <div class="date">
+    <span>
+        ARRIVAL DATE: <input type="date" name="date" id="date" required>
+    </span>
+    <span>
+        DESTINATION DATE: <input type="date" name="date" id="date" required>
+    </span>
+    <span>
+        ROOM TYPE: 
+        <select name="room" id="room">
+            <option value="choose">Choose</option>
+            <option value="">Deluxe Room</option>
+            <option value="Visa">Executive Club</option>
+            <option value="Credit Card">Executive Suite</option>
+        </select>
+    </span>
+    </div>
+    <div>
+    <button class="btn" onclick="myFunction()">Availability</button>
+    <script>
+        function myFunction() {
+          alert("Yes, Room is available");
+        }
+    </script>
+    </div>
+    <div>
+        <a href="Payment2.html" target="_blank"><button class="btn pay">Pay Now</button>
+        </a>
+    </div>
+</body>
+</html>

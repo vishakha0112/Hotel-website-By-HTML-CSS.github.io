@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+</head>
+<style>
+    body{
+        background-image: url('images/roof-top-pool-g2808fcb70_1920.jpg');
+        width: 100%;
+        opacity: 0.7;
+    }
+    li>a{
+        display: grid;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 30px;
+        font-family:'Times New Roman', Times, serif;
+        padding: 20px;
+        margin: 30px;
+        text-align: center;
+        background-color: cadetblue;
+        text-transform: uppercase;
+        border-radius: 20px;
+        transition:background-color 2s;
+    }
+    a:hover{
+        color: cyan;
+        cursor: pointer;
+        animation: transition 2s ease 0s;
+        background-color: seagreen;
+    }
+    .logo>li{
+        display: inline-block;
+    }
+    @keyframes transition {
+        0%{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+        }
+        100%{
+            box-shadow: 15px 15px 15px rgba(0,0,0,0.7);
+        }
+    }
+</style>
+<body style="background-color: black;">
+    <ul class="logo" style="list-style-type: none;">
+        <li style="margin:20px;"><img src="images/floral-gd47328d9e_1920.jpg" style="width: 60px; clip-path: circle(50% at 50% 50%);"></li>
+        <li class="name" style="color: rgb(126, 109, 16); text-align: center; text-indent: 250px; font-size: 50px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">THE SERENITY HOTEL</li>
+    </ul>
+    <!-- <span style="color: rgb(182, 180, 84); text-align: center; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;">&nbsp;&nbsp;THE SERENITY HOTEL</span> -->
+    <ul style="list-style-type: none;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Offers</a></li>
+        <li><a href="index.html">Dining</a></li>
+        <li><a href="book now.html">Book Now</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+    </ul>
+</body>
+</html>

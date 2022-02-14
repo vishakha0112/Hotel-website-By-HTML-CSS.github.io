@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Cover{
+            color: darkcyan;
+            padding: 6px;
+            margin: 10px;
+            background-color: whitesmoke;
+            text-align: center;
+            text-decoration-color: chocolate;
+            text-shadow:2px 2px 2px black ;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 300%;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        #special{
+            text-align: left;
+            text-indent: 15px;
+            font-size: 135%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #box1,#box2{
+            padding: 6px;
+            border: 6px solid black;
+            margin: 10px;
+        }
+        #Personal{
+            text-align: center;
+            color: saddlebrown;
+            text-decoration: underline;
+            font-size: 200%;
+        }
+        p,legend{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 125%;
+        }
+        #Payment{
+            text-align: center;
+            color: saddlebrown;
+            text-decoration: underline;
+            font-size: 200%;
+        }
+        #submit{
+            text-align: center;
+            background-color: darkcyan;
+            height:30px;
+        }
+        body{
+            background-color:lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <p id="Cover">Payment Form</p>
+        <h3 id="special">Required Details are marked by "*".</h2>
+        <div id="box1">
+            <h2 id="Personal">PERSONAL DETAILS</h2>
+            <p>*NAME: <input type="text" name="name" id="name" placeholder="Vaibhav Bothra" required></p>
+            <fieldset>
+                <legend>*GENDER-</legend>
+                <p>Male&nbsp;:  &nbsp; &nbsp;<input type="radio" name="gender" id="gender"></p>
+                <p>Female: &nbsp;<input type="radio" name="gender" id="gender"></p>
+            </fieldset>
+            <p>*ADDRESS: <textarea name="address" id="address" cols="20" rows="8" required></textarea></p>
+            <p>*CONTACT NUMBER: <input type="number" name="contact" id="contact" placeholder="9815637621" required></p>
+            <p>*EMAIL ADDRESS: <input type="email" name="email" id="email" placeholder="xyz@gmail.com" required></p>
+        </div>
+        <br>
+        <div id="box2">
+            <h2 id="Payment">PAYMENT DETAILS</h2>
+            <p>*CARD: <select name="card" id="card" required>
+                <option value="">--Select an option--</option>
+                <option value="Visa">Visa</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Master Card">Master Card</option>
+            </select></p>
+            <p>*CARD NUMBER: <input type="number" name="number" id="number" required></p>
+            <p>*NAME ON CARD: <input type="text" required></p>
+            <p>*EXPIRY DATE: <input type="date" name="date" id="date" required></p>
+            <p>*CVV: <input type="password" name="pswd" id="pswd" placeholder="789" required></p>
+        </div>
+        <p id="submit"><input type="submit" value="Pay Now"></p>
+    </form>
+</body>
+</html>

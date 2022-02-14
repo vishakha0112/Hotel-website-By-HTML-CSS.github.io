@@ -1,0 +1,173 @@
+body{
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.navbar{
+    background-color: black;
+    height: 40px;
+    justify-content: center;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+a:hover{
+    cursor: pointer;
+    color: royalblue;
+    border-radius: 5px;
+    background-color: cornsilk;
+    padding: 10px;
+}
+.menubar{
+    padding-left: 190px;
+    color: white;
+    font-size: 20px;
+}
+.menuitem:hover{
+    cursor: pointer;
+    color: royalblue;
+    background-color: black;
+}
+#one {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .content {
+    position: relative;
+    bottom: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+.about{
+    width:40%;
+    float: left;
+    padding-right:20px;
+    animation: rotation 4s infinite linear;
+}
+@keyframes flipping{
+    50%{
+        transform:scale(1.25,1.25);
+    }
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform:rotate(3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.ani{
+    text-align: center; 
+    color: rgb(103, 223, 177);
+    font-size: 30px; 
+    position: relative; 
+    bottom: 100px;
+    animation: flipping 2s infinite;
+}
+.brief{
+    padding: 20px;
+    margin: 20px;
+    box-sizing: content-box;
+    background-color: honeydew;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
+    height: 240px;
+}
+.number{
+    display:grid;
+    position: relative;
+    bottom: 90px;
+}
+.two{
+    background-color: rgb(200, 238, 225);
+    color: darkslategrey;
+    text-align: center;
+    margin: 10px;
+    border-radius: 7px;
+    animation: transition 4s infinite 0s;
+}
+@keyframes transition {
+    0%{
+        box-shadow: 2px 2px rgba(188, 221, 209, 0.5);
+    }
+    50%{
+        box-shadow: 4px 4px rgba(121, 180, 160, 0.7);
+    }
+    100%{
+        box-shadow:8px 8px rgba(62, 117, 98, 0.9);
+    }
+}
+.section{
+    display: flex;
+    bottom: 75px;
+    position: relative;
+}
+.box{
+    box-shadow: 5px 5px darkgray;
+    margin: 10px;
+    box-sizing: content-box;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+}
+.contact{
+    display:flex;
+    position: relative;
+    bottom:50px;
+}
+.loc{
+    background-color: whitesmoke;
+    width:50%;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 10px 10px 20px -6px rgba(189, 174, 174, 0.5);
+}
+.cnt{
+    background-color: black;
+    width:100%;
+    position:relative;
+    bottom:50px;
+    color:white;
+    text-align: center;
+}
+.us{
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+.account{
+    font-size: 30px;
+    display: inline-block;
+    padding-right:20px;
+}
+.center{
+    background-color: black;
+    width:100%;
+    position:relative;
+    color:white;
+    font-size: 21px;
+    text-align: center;
+}
